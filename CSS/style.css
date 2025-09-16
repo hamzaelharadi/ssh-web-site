@@ -1,0 +1,374 @@
+
+/* start variables  */
+*:root {
+    --main-color: #19c8fa;
+}
+/* end variables  */
+
+
+/* Quetamos espacio de margin y padding */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* small  */
+
+@media (min-width: 768px){
+    .contenido {
+        width: 750px;
+    }
+}
+
+
+/* Media  */
+@media (min-width: 992px){
+    .contenido {
+        width: 970px;
+    }
+}
+
+
+/* Large  */
+@media (min-width: 1200px){
+    .contenido {
+        width: 1170px;
+    }
+}
+
+
+
+
+/* Inicio de body  */
+
+body {
+   
+
+display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+
+
+
+}
+
+
+.contenido {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+/* Fin de body  */
+
+
+/* Inicio de header  */
+
+header {
+    
+    padding: 20px;
+    background-color: #333;
+   
+ 
+}
+
+
+.elemtos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.elemtos i {
+    font-size: 50px;
+    
+}
+.logo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+
+.elemtos .nav-link {
+   
+    display: flex;
+    gap: 40px;
+}
+
+.elemtos .nav-link a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+
+.elemtos .nav-link a:hover {
+    color: var(--main-color);
+}
+
+
+/* Fin de header  */
+
+
+/* Inicio de Main  */
+
+/* Inicio section uno  */
+.landing {
+    height: 100vh;
+    background-image: url(../Images/vintage-black-small-bicycle-outdoors.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 10px 15px black;
+    
+   
+}
+
+.landing h2 {
+    position: absolute;
+    top: 120px;
+}
+
+.landing p {
+    position: absolute;
+    top: 200px;
+}
+
+h1 {
+    background-color: #e6e6e6;
+    padding: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 50px ;
+    font-weight: bold;
+    opacity: 0.2;
+    position: relative;
+}
+
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    
+  text-align: center;
+}
+.landing p{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* Fin section uno  */
+
+
+
+
+
+/* Inicion de section Dos  */
+.section-dos {
+    margin-top: 60px;
+    height: 100vh;
+   
+}
+
+.top-ventas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.top-ventas .vetas:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
+.top-ventas .vetas {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 70% 30%; 
+    background-color: #e6e6e6;
+    transition: all ,0.5s ease-in-out;
+
+}
+.top-ventas .vetas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-ventas .vetas .text {
+    text-align: center;
+    
+}
+
+
+
+/* Fin de section Dos  */
+
+
+
+
+
+/* Inicion de section Tres  */
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    
+}
+
+.contact input {
+    padding: 20px;
+    border :1px solid #ccc;
+    margin-bottom: 30px;
+}
+.contact label {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contact textarea {
+    padding: 60px;
+    margin-bottom: 20px;
+}
+.contact input[type="button"]{
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    transition: all ,1s ease-in-out;
+}
+.contact input[type="button"]:hover{
+    cursor: pointer;
+    background-color: #e6e6e6;
+    color: black;
+}
+
+/* Fin de section Tres  */  
+
+/* Fin de Main  */
+
+
+/* inicion de footer */
+
+footer {
+    
+    background-color: #333;
+    padding: 40px;
+}
+
+.alan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.alan a {
+    text-decoration: none;
+    color: white;
+}
+/* Fin de footer */
+
+.alan .socila i {
+   font-size: 40px;
+}
+
+
+/* stelo de pajina contactos  */
+
+
+.ubication {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.ubication img {
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+.ubication h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
