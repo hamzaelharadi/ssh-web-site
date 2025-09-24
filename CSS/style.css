@@ -232,6 +232,28 @@ h4 {
   color: black;
 }
 
+/* stelo de pajina contactos  */
+
+.ubication {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.ubication img {
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ubication h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 /* Fin de section Tres  */
 
 /* Fin de Main  */
@@ -263,24 +285,5 @@ footer {
   font-size: 40px;
 }
 
-/* stelo de pajina contactos  */
 
-.ubication {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
 
-.ubication img {
-  background-size: cover;
-  width: 100%;
-  object-fit: cover;
-}
-
-.ubication h3 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-}
