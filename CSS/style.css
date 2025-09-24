@@ -191,7 +191,11 @@ h4 {
 /* Fin de section Dos  */
 
 /* Inicion de section Tres  */
-
+.form{
+    width: 100%;
+    margin-bottom: 40px; 
+   
+}
 .contact {
   display: flex;
   flex-direction: column;
